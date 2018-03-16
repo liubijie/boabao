@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>领取礼包</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <!--<link rel="stylesheet" href="../css/animate.css">-->
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/screenNew.js"></script>
+
+</head>
+<style>
+    .line{
+        width: 2rem;
+        height: 0.01rem;
+        border-bottom: 0.02rem solid #5a5757;
+        background: #5a5757;
+    }
+</style>
+<body>
+<div id="container" style="width: 100%;background: url(../img/1.jpg) no-repeat;background-size: 100% 100%">
+    <!--头部-->
+    <div style="width: 6rem;margin: 0 auto;">
+        <i class="iconfont icon-flow" style="font-size: 0.44rem" onclick="history.go(-1);"></i>
+    </div>
+<!--礼包部分-->
+    <div style="margin-top: 0.02rem;position: relative;height: 9rem">
+        <img src="../img/10.png" alt="" width="100%" class="ps">
+        <div style="position: absolute;width: 4rem;top:3rem;left: 1rem;color: #fff">
+            <img src="../img/yhq.png" alt=""class="ps w0">
+            <div style="position: relative;z-index: 2;">
+                <div style="text-align: center;font-size: 0.4rem;width: 4rem;margin: 0.6rem auto 0;">大礼包</div>
+                <div onclick="lilq()" style="font-size: 0.24rem;width: 2rem;margin: 0.4rem auto 0;text-align: center;height: 0.6rem;line-height: 0.6rem;border-radius: 1rem;background: lightcoral;">
+                    立即领取
+                </div>
+            </div>
+        </div>
+        <div style="position: absolute;bottom: 0.1rem;right: 0.1rem;height: 2.6rem;font-size: 0.26rem;width: 5rem;">
+            <div class="line" style="position: absolute;right: 1.8rem;"></div>
+            <a href="mm.html" style="position: absolute;right: 2rem;top: 0.24rem;">新妈课程</a>
+            <div class="line" style="position: absolute;right: 1.4rem;top: 0.8rem;"></div>
+            <a href="baby.html" style="position: absolute;right: 1.6rem;top: 1rem;">宝宝营养</a>
+            <div class="line" style="position: absolute;right: 1rem;top: 1.6rem;"></div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+    $(function(){
+        //改变div的高度
+        $("#container").css("min-height",$(window).height());
+    });
+    function dialog(title, content, btns) {
+        var maxHeight = $("body").height();
+        var arr = new Array();
+        arr.push("<div class='title_dialog lh60 bb1'>");
+        arr.push(title);
+        arr.push("</div>");
+        arr.push("<div class='con_dialog' style='max-height:" + maxHeight / 2 + "'>");
+        arr.push(content);
+        arr.push("</div>");
+        var win = $("body").append('<div id="showDialog" class="window_dialog">' +
+            '<div class="content_dialog">' + arr.join("") + '</div>' + //内容
+            '<div class="button_dialog">' + btns + '</div>' + //按钮
+            '</div>');
+        $("body").append('<div id="backDialog"  style="display:block;"></div>');
+        $("#backDialog").css("height", maxHeight);
+    }
+    function lilq() {
+        var title="";
+        var content = "<div style='width: 3rem;height: 0.6rem;border-radius: 1rem;background: #fff;margin: 0 auto;line-height: 0.6rem;font-size: 0.24rem;'>领取成功！</div>";
+        var btns="";
+        dialog(title, content, btns);
+        $('#backDialog').click(function () {
+            $(this).remove();
+            $('#showDialog').remove();
+        })
+    }
+
+</script>

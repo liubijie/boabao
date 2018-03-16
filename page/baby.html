@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>宝宝营养</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
+    <!--<link rel="stylesheet" href="../css/animate.css">-->
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/screenNew.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            //改变div的高度
+            $("#container").css("min-height",$(window).height());
+        });
+    </script>
+</head>
+<style>
+    @-webkit-keyframes change {
+        0%{
+            -webkit-transform: scale(1.0);
+            -moz-transform: scale(1.0);
+            -ms-transform: scale(1.0);
+            -o-transform: scale(1.0);
+            transform: scale(1.0);
+
+        }
+        50%{
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        100%{
+            -webkit-transform: scale(1.0);
+            -moz-transform: scale(1.0);
+            -ms-transform: scale(1.0);
+            -o-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+    }
+
+    .loading{
+        -webkit-animation:change 0.8s infinite linear ;
+    }
+</style>
+<body>
+<div id="container" style="width: 100%;background: url(../img/1.jpg) no-repeat;background-size: 100% 100%">
+    <!--头部-->
+    <div style="width: 6rem;height: 2.4rem;margin: 0 auto;">
+        <i class="iconfont icon-flow" style="font-size: 0.44rem" onclick="history.go(-1);"></i>
+        <div style="width: 1.4rem;position: absolute;top: 0.4rem;left: 1rem;">
+            <img src="../img/11.png" class="w0" alt="">
+        </div>
+        <div style="font-size: 0.3rem;color: #ff56a3;width: 3rem;position: absolute;top: 1.6rem;right: 0.6rem;letter-spacing: 0.07rem;text-align: center;border-bottom: 0.04rem solid #ff56a3;">
+            <span>给宝宝最好的营养</span>
+        </div>
+    </div>
+    <!--商品-->
+    <div style="width: 5.4rem;margin: 0.2rem auto 0;">
+        <a href="" style="display: flex;justify-items: center;margin-bottom: 0.1rem">
+            <img src="../img/11.jpg" alt="" style="width: 2rem;height: 2rem;margin-right: 0.1rem">
+            <div>
+                <div style="font-size: 0.32rem;margin-bottom: 0.06rem">商品名称</div>
+                <div style="font-size: 0.24rem">简介简介简介简介简介简介简介简介</div>
+                <div style="font-size: 0.2rem;text-decoration:line-through;margin-top: 0.04rem">￥666.666</div>
+                <div style="color: red;font-size: 0.3rem;margin-top: 0.04rem">促销价:￥222.222</div>
+            </div>
+        </a>
+        <a href="" style="display: flex;justify-items: center;margin-bottom: 0.1rem">
+            <img src="../img/11.jpg" alt="" style="width: 2rem;height: 2rem;margin-right: 0.1rem">
+            <div>
+                <div style="font-size: 0.32rem;margin-bottom: 0.06rem">商品名称</div>
+                <div style="font-size: 0.24rem">简介简介简介简介简介简介简介简介</div>
+                <div style="font-size: 0.2rem;text-decoration:line-through;margin-top: 0.04rem">￥666.666</div>
+                <div style="color: red;font-size: 0.3rem;margin-top: 0.04rem">促销价:￥222.222</div>
+            </div>
+        </a>
+        <a href="" style="display: flex;justify-items: center;margin-bottom: 0.1rem">
+            <img src="../img/11.jpg" alt="" style="width: 2rem;height: 2rem;margin-right: 0.1rem">
+            <div>
+                <div style="font-size: 0.32rem;margin-bottom: 0.06rem">商品名称</div>
+                <div style="font-size: 0.24rem">简介简介简介简介简介简介简介简介</div>
+                <div style="font-size: 0.2rem;text-decoration:line-through;margin-top: 0.04rem">￥666.666</div>
+                <div style="color: red;font-size: 0.3rem;margin-top: 0.04rem">促销价:￥222.222</div>
+            </div>
+        </a>
+        <a href="" style="font-size: 0.22rem;margin-top: 0.1rem;color: red;">更多选择，请点击^^</a>
+    </div>
+
+    <!--尾部-->
+    <div style="display: flex;justify-items: center;margin-bottom: 0.1rem">
+        <div style="width: 3rem;margin-left: 0.4rem;margin-top: 0.1rem;position: relative">
+            <a href="">
+                <img src="../img/12.png" class="w0" style="height: 1.6rem">
+                <span style="font-size: 0.3rem;position: absolute;top: 0.6rem;left: 0.6rem;">领取优惠券</span>
+            </a>
+        </div>
+        <a href="mm.html" style="width: 2.2rem;height:0.8rem;position: relative;display: flex;justify-items: center;font-size: 0.36rem;top: 0.4rem;left: 0.4rem;color: lightcoral;">
+            <i class="iconfont icon-typecar117 loading" style="font-size: 0.6rem;"></i>
+            <div style="position: absolute;right: 0.12rem;top:0.1rem;">
+                新妈课程
+            </div>
+        </a>
+    </div>
+
+</div>
+
+
+
+</body>
+</html>

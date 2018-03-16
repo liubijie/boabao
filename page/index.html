@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>首页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <!--<link rel="stylesheet" href="../css/animate.css">-->
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/screenNew.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            //改变div的高度
+            $("#container").css("min-height",$(window).height());
+        });
+    </script>
+</head>
+<style>
+    @-webkit-keyframes change {
+        0%{
+            -webkit-transform: scale(1.0);
+            -moz-transform: scale(1.0);
+            -ms-transform: scale(1.0);
+            -o-transform: scale(1.0);
+            transform: scale(1.0);
+
+        }
+        50%{
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        100%{
+            -webkit-transform: scale(1.0);
+            -moz-transform: scale(1.0);
+            -ms-transform: scale(1.0);
+            -o-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+    }
+
+    .loading{
+        -webkit-animation:change 1s infinite linear ;
+
+    }
+</style>
+<body>
+    <div id="container" style="width: 100%;background: url(../img/1.jpg) no-repeat;background-size: 100% 100%">
+        <div class="m1" style="width: 3.6rem;position: absolute; top: 0.6rem; left: 0.6rem;">
+            <img src="../img/m1.png" class="w0" alt="">
+        </div>
+        <div class="m2" style="width: 2rem;position: absolute;top: 0.6rem;right: 0.6rem;">
+            <img src="../img/m2.png" class="w0" alt="">
+        </div>
+        <div class="m3" style="width: 2rem;position: absolute;top: 2.2rem;right: 0.8rem;">
+            <img src="../img/1.png" class="w0" alt="">
+        </div>
+        <div class="m4" style="width: 2rem;position: absolute;bottom: 0.6rem;right: 0.6rem;">
+            <img src="../img/2.png" class="w0" alt="">
+        </div>
+
+        <!--主要部分-->
+        <div class="ps" style="top: 4.4rem;left: 0.6rem;width: 5rem;height: 1.6rem;background: url(../img/111.png) no-repeat;background-size: 100% 100%;">
+                <a href="mm.html" style="font-size: 0.34rem;line-height:  0.8rem;text-align:  center;color: #fff;width: 3.6rem;">新妈课程</a>
+                <a href="baby.html" style="font-size: 0.34rem;line-height:  0.8rem;text-align:  center;color: #fff;margin-left: 1rem;/* width: 6.2rem; */">宝宝营养</a>
+        </div>
+
+            <a href="register.html">
+                <div class="m5" style="width: 3rem;position: absolute;bottom: 1.8rem;left: 0.4rem;">
+                    <img src="../img/m4.png" class="w0" alt="">
+                </div>
+
+                <span class="loading ps" style="font-size: 0.4rem;bottom: 3.1rem;left: 1.4rem;color: #ff56a3;" >注册会员</span>
+            </a>
+
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>新妈课程</title>
+    <link rel="stylesheet" href="../css/base.css?v=1">
+    <link rel="stylesheet" type="text/css" href="../css/iconfont.css?v=1">
+    <!--<link rel="stylesheet" href="../css/animate.css">-->
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script src="../js/screenNew.js"></script>
+</head>
+<style>
+    @-webkit-keyframes change {
+        0%{
+            -webkit-transform: scale(1.0);
+            -moz-transform: scale(1.0);
+            -ms-transform: scale(1.0);
+            -o-transform: scale(1.0);
+            transform: scale(1.0);
+
+        }
+        50%{
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        100%{
+            -webkit-transform: scale(1.0);
+            -moz-transform: scale(1.0);
+            -ms-transform: scale(1.0);
+            -o-transform: scale(1.0);
+            transform: scale(1.0);
+        }
+    }
+
+    .loading{
+        -webkit-animation:change 0.8s infinite linear ;
+    }
+    ul li{
+        padding: 0.14rem 0.5rem 0.14rem 0.3rem;
+    }
+    .active{
+        background: #ff56a3;
+        color: #fff;
+    }
+    @-webkit-keyframes left {
+        0%{
+            left: -0.7rem;
+
+        }
+        50%{
+            left: -0.8rem;
+        }
+        100%{
+            left: -0.7rem;
+        }
+    }
+    @-webkit-keyframes right {
+        0%{
+            left: -0.7rem;
+
+        }
+        50%{
+            left: -0.6rem;
+        }
+        100%{
+            left: -0.7rem;
+        }
+    }
+    .righticon{
+        -webkit-animation:right 0.8s infinite linear ;
+    }
+    .lefticon{
+         -webkit-animation:left 0.8s infinite linear ;
+     }
+
+</style>
+<body>
+<div id="container" style="width: 100%;background: url(../img/1.jpg) no-repeat;background-size: 100% 100%;display: none">
+    <!--头部-->
+    <div style="width: 6rem;margin: 0 auto;">
+        <i class="iconfont icon-flow" style="font-size: 0.44rem" onclick="history.go(-1);"></i>
+    </div>
+    <div style="width: 5rem;margin: 0.4rem auto;position: relative">
+        <img src="../img/5.png" alt="" width="100%">
+        <div style="position: absolute;top: -0.12rem;left: 0.4rem;font-size: 0.4rem">
+            新妈课程
+        </div>
+    </div>
+<!--中间部分-->
+    <div style="margin-top: 0.8rem;font-size: 0.26rem;text-align: center">
+        <div style="background: rgba(255, 255, 255, 0.5);width:3rem;margin-left: 0.6rem;padding: 0.14rem 0" onclick="courseshow(this)">
+            <div style="background: rgb(255, 255, 255);width:2.66rem;height: 0.5rem;margin:0 auto;line-height: 0.5rem;border: 0.01rem solid #b5b2b2" >
+                课程一
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div style="background: rgba(255, 255, 255, 0.5);width:3rem;margin-left: 0.6rem;padding: 0.14rem 0;margin-top: 0.44rem;float: right;margin-right: 0.4rem">
+            <div style="background: rgb(255, 255, 255);width:2.66rem;height: 0.5rem;margin:0 auto;line-height: 0.5rem;border: 0.01rem solid #b5b2b2" >
+                课程二
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div style="background: rgba(255, 255, 255, 0.5);width:3rem;margin-left: 0.6rem;margin-top: 0.44rem;padding: 0.14rem 0">
+            <div style="background: rgb(255, 255, 255);width:2.66rem;height: 0.5rem;margin:0 auto;line-height: 0.5rem;border: 0.01rem solid #b5b2b2" >
+                课程三
+            </div>
+        </div>
+        <div style="clear: both"></div>
+        <div style="background: rgba(255, 255, 255, 0.5);width:3rem;margin-left: 0.6rem;padding: 0.14rem 0;float: right;margin-top: 0.44rem;margin-right: 0.2rem">
+            <div style="background: rgb(255, 255, 255);width:2.66rem;height: 0.5rem;margin:0 auto;line-height: 0.5rem;border: 0.01rem solid #b5b2b2" >
+                课程四
+            </div>
+        </div>
+        <div style="clear: both"></div>
+    </div>
+
+    <!--底部-->
+    <div class="loading" style="width: 2rem;font-size: 0.4rem;color: deeppink;margin-top: 0.4rem;margin-left: 0.8rem" onclick="lilq()">
+        领取礼包
+    </div>
+    <div style="position: relative">
+        <div style="width: 3rem;position: absolute;z-index: 2;right: 0.6rem;">
+            <img src="../img/7.png" width="100%" alt="">
+        </div>
+        <div style="width: 4rem;position: absolute;height: 1rem;left: 0.6rem;top: 1rem;">
+            <img src="../img/8.png" width="100%" height="100%" alt="">
+            <a href="baby.html" style="color: #fff;font-size: 0.4rem;position: absolute;top: 0.36rem;left: 0.4rem;">宝宝营养</a>
+        </div>
+    </div>
+    <div style="font-size: 0.24rem;position: absolute;bottom: 0.3rem;left: 1rem;">咨询热线：8888-8888</div>
+</div>
+
+
+<div id="course" style="">
+
+    <div style="width: 6rem;margin: 0 auto;">
+        <i class="iconfont icon-flow" style="font-size: 0.44rem" onclick="coursehide(this)"></i>
+    </div>
+<!--课程内容-->
+    <div style="width: 6rem;margin:0rem auto">
+        <div class="title" style="font-size: 0.4rem;margin-left: 0.6rem;margin-bottom: 0.1rem">课程课程课程</div>
+        <div style="text-indent:0.6rem;font-size: 0.26rem;margin-bottom: 0.1rem">Pellentesque iaculis, augue eu bibendum posuere, erat orci vestibulum mi, id tempor augue enim ut sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris scelerisque orci sed sapien vulputate aliquam. Sed volutpat maximus libero eget porttitor. Ut a massa porta, dapibus justo sed, varius sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent neque arcu, aliquam ut eros sollicitudin, fermentum venenatis risus. Vestibulum eleifend ligula a odio tristique, et molestie lacus pretium. Etiam tempus ornare eros vel pharetra. Pellentesque in felis quam. In risus justo, congue ut quam vel, dictum dapibus nunc.
+        </div>
+        <div style="width: 5.4rem;margin: 0 auto;">
+            <img src="../img/1111.jpg" alt="" width="100%">
+        </div>
+        <div style="text-indent:0.6rem;font-size: 0.26rem;margin-bottom: 0.1rem">Pellentesque iaculis, augue eu bibendum posuere, erat orci vestibulum mi, id tempor augue enim ut sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris scelerisque orci sed sapien vulputate aliquam. Sed volutpat maximus libero eget porttitor. Ut a massa porta, dapibus justo sed, varius sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent neque arcu, aliquam ut eros sollicitudin, fermentum venenatis risus. Vestibulum eleifend ligula a odio tristique, et molestie lacus pretium. Etiam tempus ornare eros vel pharetra. Pellentesque in felis quam. In risus justo, congue ut quam vel, dictum dapibus nunc.
+        </div>
+        <div style="width: 5.4rem;margin: 0 auto;">
+            <img src="../img/1111.jpg" alt="" width="100%">
+        </div>
+        <div style="text-indent:0.6rem;font-size: 0.26rem;margin-bottom: 0.1rem">Pellentesque iaculis, augue eu bibendum posuere, erat orci vestibulum mi, id tempor augue enim ut sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris scelerisque orci sed sapien vulputate aliquam. Sed volutpat maximus libero eget porttitor. Ut a massa porta, dapibus justo sed, varius sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent neque arcu, aliquam ut eros sollicitudin, fermentum venenatis risus. Vestibulum eleifend ligula a odio tristique, et molestie lacus pretium. Etiam tempus ornare eros vel pharetra. Pellentesque in felis quam. In risus justo, congue ut quam vel, dictum dapibus nunc.
+        </div>
+    </div>
+    <!--领取礼包-->
+    <a href="package.html" style="width: 100%;background: orangered;color: #fff;font-size: 0.3rem;text-align: center;height: 0.8rem;line-height: 0.8rem">领取大礼包</a>
+
+</div>
+
+
+    <!--课程表-->
+    <div class="classcon" style="position: fixed;top: 3rem;right: 0;">
+        <i class="iconfont icon-xiangzuo lefticon" style="font-size: 1rem;color: hotpink;position: absolute;top: 0.8rem;left: -0.7rem;text-shadow: 1px 3px 3px hotpink;" onclick="keshow(this)"></i>
+        <i class="iconfont icon-xiangyou righticon" style="font-size: 1rem;color: hotpink;position: absolute;top: 0.8rem;left: -0.7rem;text-shadow: 1px 3px 3px hotpink;display: none;" onclick="kehide(this)"></i>
+        <div class="classietms" style="margin-left: 0.1rem;font-size: 0.3rem;background:  #fff;box-shadow: 1px 2px 4px #caae7c;">
+            <ul>
+                <li class="active" onclick="active(this)">
+                    课程一
+                </li>
+                <li onclick="active(this)">
+                    课程二
+                </li>
+                <li onclick="active(this)">
+                    课程三
+                </li>
+                <li onclick="active(this)">
+                    课程四
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+    $(function(){
+        //改变div的高度
+        $("#container,#course").css("min-height",$(window).height());
+        $(".classcon").css("right",-($(".classietms").width()+2));
+    });
+    function dialog(title, content, btns) {
+        var maxHeight = $("body").height();
+        var arr = new Array();
+        arr.push("<div class='title_dialog lh60 bb1'>");
+        arr.push(title);
+        arr.push("</div>");
+        arr.push("<div class='con_dialog' style='max-height:" + maxHeight / 2 + "'>");
+        arr.push(content);
+        arr.push("</div>");
+        var win = $("body").append('<div id="showDialog" class="window_dialog">' +
+            '<div class="content_dialog">' + arr.join("") + '</div>' + //内容
+            '<div class="button_dialog">' + btns + '</div>' + //按钮
+            '</div>');
+        $("body").append('<div id="backDialog"  style="display:block;"></div>');
+        $("#backDialog").css("height", maxHeight);
+    }
+    function lilq() {
+        var title="";
+        var content = "<div style='width: 5rem;height: 0.6rem;border-radius: 1rem;background: #fff;margin: 0 auto;font-size: 0.3rem;line-height: 0.6rem;'>至少参加一门课程哦^^！</div>";
+        var btns="";
+        dialog(title, content, btns);
+        $('#backDialog').click(function () {
+            $(this).remove();
+            $('#showDialog').remove();
+        })
+    }
+    
+    function coursehide(obj) {
+        $(obj).parents('#course').hide().siblings('#container').show();
+    }
+    function courseshow(obj) {
+        $(obj).parents('#container').hide().siblings('#course').show();
+    }
+    
+    
+    // 课程表
+    function kehide(obj) {
+        $(obj).hide().siblings("i.icon-xiangzuo").show()
+        $(".classcon").animate({"right":-($(".classietms").width()+2)});
+    }
+    function keshow(obj) {
+        $(obj).hide().siblings("i.icon-xiangyou").show();
+        $(".classcon").animate({"right":0});
+    }
+
+    function active(obj) {
+        $(obj).addClass('active').siblings('li').removeClass("active")
+    }
+
+
+</script>
